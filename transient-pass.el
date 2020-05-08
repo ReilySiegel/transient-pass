@@ -56,7 +56,7 @@ ARG is passed."
   (interactive "P")
   (if ARG
       (call-interactively 'transient-pass-dispatch)
-    (password-store-copy)))
+    (call-interactively 'password-store-copy)))
 
 (provide 'transient-pass)
 ;;; transient-pass.el ends here
