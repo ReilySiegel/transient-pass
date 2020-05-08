@@ -49,12 +49,12 @@
    (member "--force" (transient-args 'pass-generate))
    (member "--no-symbols" (transient-args 'pass-generate))))
 
-(defun transient-pass (&optional ARG)
-  "Entrypoint to transient-pass,
-Lauch password-store-copy, or transient-oass-dispatch if prefix
+(defun transient-pass (&optional arg)
+  "Entrypoint to transient-pass.
+Lauch password-store-copy, or transient-pass-dispatch if prefix
 ARG is passed."
   (interactive "P")
-  (if ARG
+  (if arg
       (call-interactively 'transient-pass-dispatch)
     (call-interactively 'password-store-copy)))
 
