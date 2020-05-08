@@ -2,6 +2,11 @@
 ;; Author: ReilySiegel
 ;; URL: https://github.com/ReilySiegel/transient-pass/
 ;; Package-Requires: ((password-store "1.6.5") transient seq)
+
+(require 'transient)
+(require 'password-store)
+(require 'seq)
+
 (define-transient-command transient-pass-dispatch ()
   "List all pass options."
   [["Read"
