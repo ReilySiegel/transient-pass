@@ -45,9 +45,9 @@
   (interactive (list (read-string "Entry Name: ")))
   (password-store--run-generate
    entry
-   (transient-pass-generate-get-length (transient-args 'pass-generate))
-   (member "--force" (transient-args 'pass-generate))
-   (member "--no-symbols" (transient-args 'pass-generate))))
+   (transient-pass-generate-get-length (transient-args 'transient-pass-generate))
+   (member "--force" (transient-args 'transient-pass-generate))
+   (member "--no-symbols" (transient-args 'transient-pass-generate)))  )
 
 (defun transient-pass (&optional arg)
   "Entrypoint to transient-pass.
